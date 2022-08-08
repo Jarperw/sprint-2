@@ -1,6 +1,16 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$color-footer: (
+  "color-footer": #252542
+);
+
+$theme-colors: map-merge($theme-colors, $color-footer);
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 
@@ -14,7 +24,7 @@ $secondary: #FA5959;
 
 .texto-principal {
     float: right;
-    
+
     p {
         letter-spacing: -0.031em;
     }
@@ -25,20 +35,20 @@ $secondary: #FA5959;
         border: none;
         --bs-nav-tabs-border-width: none;
     }
-    
+
     .nav-item .active {
         border-bottom: 4px solid $secondary;
         color: #000 !important;
     }
-    
+
     li {
         border-bottom: 1px solid #aaa;
-        
+
         button {
             width: 14em;
         }
     }
-    
+
     .sombra-2 {
         width: 84%;
         top: 5em;
@@ -68,11 +78,41 @@ $secondary: #FA5959;
     .accordion-button::after {
         background-image: url(../Imagenes/icon-arrow.svg);
     }
-    
+
     .btn {
         padding-right: 1.2em !important;
         padding-left: 1.2em !important;
     }
+}
+
+.formulario {
+    p {
+        letter-spacing: 0.4em;
+        font-size: small;
+        margin-bottom: 0.5em;
+    }
+
+    input {
+        font-size: 1em;
+        font-weight: 600;
+        padding: 0.645em 5em;
+        padding-left: 1.2em;
+
+        &::placeholder {
+            color: #ddd;
+        }
+    }
+
+    .btn {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+
+}
+
+footer {
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
 }
 
 @media (min-width: 1400px) {
@@ -237,7 +277,7 @@ $secondary: #FA5959;
                 border: 2px solid #fff;
             }
         }
-        
+
         .social {
             padding-top: 9em;
         }
@@ -303,13 +343,18 @@ $secondary: #FA5959;
         }
     }
 
-    .acordeon{
+    .acordeon {
         p {
             font-size: 1em;
         }
+
         .accordion-button {
             border-top: none !important;
         }
+    }
+
+    footer {
+        font-size: 0.9em;
     }
 }
 
