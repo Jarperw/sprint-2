@@ -11008,6 +11008,20 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.btn {
+  padding-top: 0.8em !important;
+  padding-bottom: 0.8em !important;
+  font-size: 0.9em;
+}
+
+.social a {
+  text-decoration: none;
+  color: #fff;
+}
+.social a i {
+  font-size: 1.9em;
+}
+
 .sombra {
   width: 75%;
   bottom: -2em;
@@ -11018,6 +11032,7 @@ textarea.form-control-lg {
 
 .texto-principal {
   float: right;
+  width: 38.8em;
 }
 .texto-principal p {
   letter-spacing: -0.031em;
@@ -11049,17 +11064,14 @@ textarea.form-control-lg {
   padding: 0 20.5em;
 }
 
-.btn {
-  padding-top: 0.8em !important;
-  padding-bottom: 0.8em !important;
-  font-size: 0.9em;
-}
-
 .acordeon .accordion-item {
   --bs-accordion-btn-focus-box-shadow: none;
 }
 .acordeon .accordion-button::after {
   background-image: url(../Imagenes/icon-arrow.svg);
+}
+.acordeon button:not(.collapsed)::after {
+  background-image: url(../Imagenes/icon-arrow2.png);
 }
 .acordeon .btn {
   padding-right: 1.2em !important;
@@ -11072,10 +11084,12 @@ textarea.form-control-lg {
   margin-bottom: 0.5em;
 }
 .formulario input {
+  position: relative;
   font-size: 1em;
   font-weight: 600;
   padding: 0.645em 5em;
   padding-left: 1.2em;
+  z-index: 1;
 }
 .formulario input::-moz-placeholder {
   color: #ddd;
@@ -11085,6 +11099,17 @@ textarea.form-control-lg {
 }
 .formulario input::placeholder {
   color: #ddd;
+}
+.formulario .valid-feedback, .formulario .invalid-feedback {
+  position: relative;
+  margin-top: -0.9em;
+  padding-top: 0.5em;
+  padding-bottom: 0.2em;
+  font-size: x-small;
+  z-index: 0;
+}
+.formulario .form-control {
+  padding: 0.7em 5.3em 0.7em 1.1em !important;
 }
 .formulario .btn {
   padding-left: 1.5em;
@@ -11096,10 +11121,45 @@ footer {
   letter-spacing: 0.2em;
 }
 
+a:hover {
+  color: #FA5959 !important;
+}
+
+.btn-secondary:hover {
+  background: #fff;
+  border: 2px solid #FA5959;
+  color: #FA5959 !important;
+}
+
+.btn-primary:hover {
+  background: #fff;
+  border: 2px solid #5265E1;
+  color: #5265E1 !important;
+}
+
+.btn-light:hover {
+  background: #fff;
+  border: 2px solid #000;
+  color: #000 !important;
+}
+
+.tabs li button:hover {
+  color: #FA5959 !important;
+}
+
+.fa-square-facebook:hover {
+  color: #FA5959;
+}
+
+.fa-twitter:hover {
+  color: #FA5959;
+}
+
+.accordion-button:hover p {
+  color: #FA5959 !important;
+}
+
 @media (min-width: 1400px) {
-  .texto-principal {
-    width: 38.8em;
-  }
   .logo-tab img {
     margin-right: 5.5em;
   }

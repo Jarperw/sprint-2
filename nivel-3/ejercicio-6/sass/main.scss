@@ -13,6 +13,25 @@ $theme-colors: map-merge($theme-colors, $color-footer);
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+@mixin btnHover ($color) {
+    background: #fff;
+    border: 2px solid $color;
+    color: $color !important;
+}
+
+.btn {
+    padding-top: 0.8em !important;
+    padding-bottom: 0.8em !important;
+    font-size: 0.9em;
+}
+
+.social a {
+    text-decoration: none;
+    color: #fff;
+    i {
+        font-size: 1.9em
+    }
+}
 
 .sombra {
     width: 75%;
@@ -24,31 +43,33 @@ $theme-colors: map-merge($theme-colors, $color-footer);
 
 .texto-principal {
     float: right;
-
+    width: 38.8em;
+    
     p {
         letter-spacing: -0.031em;
     }
 }
+
 
 .tabs {
     .nav-tabs {
         border: none;
         --bs-nav-tabs-border-width: none;
     }
-
+    
     .nav-item .active {
         border-bottom: 4px solid $secondary;
         color: #000 !important;
     }
-
+    
     li {
         border-bottom: 1px solid #aaa;
-
+        
         button {
             width: 14em;
         }
     }
-
+    
     .sombra-2 {
         width: 84%;
         top: 5em;
@@ -56,6 +77,7 @@ $theme-colors: map-merge($theme-colors, $color-footer);
         z-index: -1;
         height: 99%;
     }
+    
 }
 
 .cards {
@@ -64,21 +86,19 @@ $theme-colors: map-merge($theme-colors, $color-footer);
     }
 }
 
-.btn {
-    padding-top: 0.8em !important;
-    padding-bottom: 0.8em !important;
-    font-size: 0.9em;
-}
-
 .acordeon {
     .accordion-item {
         --bs-accordion-btn-focus-box-shadow: none;
     }
-
+    
     .accordion-button::after {
         background-image: url(../Imagenes/icon-arrow.svg);
     }
 
+    button:not(.collapsed)::after {
+        background-image: url(../Imagenes/icon-arrow2.png);
+    }
+    
     .btn {
         padding-right: 1.2em !important;
         padding-left: 1.2em !important;
@@ -91,23 +111,37 @@ $theme-colors: map-merge($theme-colors, $color-footer);
         font-size: small;
         margin-bottom: 0.5em;
     }
-
+    
     input {
+        position: relative;
         font-size: 1em;
         font-weight: 600;
         padding: 0.645em 5em;
         padding-left: 1.2em;
-
+        z-index: 1;
+        
         &::placeholder {
             color: #ddd;
         }
+    }
+    
+    .valid-feedback, .invalid-feedback {
+        position: relative;
+        margin-top: -0.9em;
+        padding-top: 0.5em;
+        padding-bottom: 0.2em;
+        font-size: x-small;
+        z-index: 0;
+    }
+    
+    .form-control {
+        padding: 0.7em 5.3em 0.7em 1.1em !important;
     }
 
     .btn {
         padding-left: 1.5em;
         padding-right: 1.5em;
     }
-
 }
 
 footer {
@@ -115,11 +149,45 @@ footer {
     letter-spacing: 0.2em;
 }
 
-@media (min-width: 1400px) {
-    .texto-principal {
-        width: 38.8em;
-    }
 
+a:hover {
+    color: $secondary !important;
+}
+
+.btn-secondary:hover {
+    @include btnHover($secondary);
+}
+
+.btn-primary:hover {
+    @include btnHover($primary);
+}
+
+.btn-light:hover {
+    @include btnHover(#000);
+}
+
+.tabs li button:hover{
+    color: $secondary !important;
+}
+
+
+.fa-square-facebook:hover {   
+    color: $secondary;
+}
+
+.fa-twitter:hover {
+    color: $secondary;
+}
+
+.accordion-button:hover {
+    p {
+        color: $secondary !important;
+    }
+}
+
+
+
+@media (min-width: 1400px) {
     .logo-tab {
         img {
             margin-right: 5.5em;
