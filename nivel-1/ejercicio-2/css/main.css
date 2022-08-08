@@ -10937,15 +10937,38 @@ textarea.form-control-lg {
   letter-spacing: -0.031em;
 }
 
-.btn {
-  padding-top: 0.8em !important;
-  padding-bottom: 0.8em !important;
-  font-size: 0.9em;
+.tabs .nav-tabs {
+  border: none;
+  --bs-nav-tabs-border-width: none;
+}
+.tabs .nav-item .active {
+  border-bottom: 4px solid #FA5959;
+  color: #000 !important;
+}
+.tabs li {
+  border-bottom: 1px solid #aaa;
+}
+.tabs li button {
+  width: 14em;
+}
+.tabs .sombra-2 {
+  width: 84%;
+  top: 5em;
+  left: 0;
+  z-index: -1;
+  height: 99%;
 }
 
 @media (min-width: 1400px) {
   .texto-principal {
     width: 38.8em;
+  }
+  .logo-tab img {
+    margin-right: 5.5em;
+  }
+  .texto-secundario {
+    margin-left: 5em !important;
+    margin-right: 5em !important;
   }
 }
 @media (max-width: 1400px) {
@@ -10954,6 +10977,9 @@ textarea.form-control-lg {
   }
   .sombra {
     width: 72%;
+  }
+  .logo-tab img {
+    margin-right: 0;
   }
 }
 @media (max-width: 1200px) {
@@ -10965,6 +10991,15 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 993px) {
+  h1, .h1 {
+    font-size: 2.8em;
+  }
+  p {
+    font-size: 1.1em;
+  }
+  h3, .h3 {
+    font-size: 2em;
+  }
   .navbar-nav li {
     font-size: 0.8em;
     letter-spacing: 0.1em;
@@ -10973,8 +11008,10 @@ textarea.form-control-lg {
     font-size: 1em;
     letter-spacing: 0.1em;
   }
-  .texto-principal h1, .texto-principal .h1 {
-    font-size: 2.8em;
+}
+@media (max-width: 1199px) and (min-width: 993px) {
+  .logo-tab img {
+    width: 27.5em;
   }
 }
 @media (max-width: 992px) {
@@ -11036,10 +11073,10 @@ textarea.form-control-lg {
   .navbar-collapse .social {
     padding-top: 9em;
   }
-  .logo-hero {
+  .logo-principal {
     width: 100%;
   }
-  .logo-hero .flotante img {
+  .logo-principal .flotante img {
     margin: auto;
   }
   .texto-principal {
@@ -11053,6 +11090,23 @@ textarea.form-control-lg {
   .texto-principal p {
     font-size: 1em;
   }
+  .tabs ul {
+    border: none;
+  }
+  .tabs li {
+    width: 90%;
+  }
+  .tabs li:nth-child(1) {
+    border-top: 1px solid #aaa;
+  }
+  .tabs p {
+    font-size: 1em;
+  }
+  .tabs .sombra-2 {
+    width: 66%;
+    top: 4em;
+    height: 100%;
+  }
 }
 @media (min-width: 723px) and (max-width: 992px) {
   .sombra {
@@ -11064,5 +11118,10 @@ textarea.form-control-lg {
   .sombra {
     width: 82%;
     bottom: 0;
+  }
+  .sombra-2 {
+    width: 75% !important;
+    top: 3.5em !important;
+    height: 100% !important;
   }
 }/*# sourceMappingURL=main.css.map */

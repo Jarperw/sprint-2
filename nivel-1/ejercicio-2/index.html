@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio Albert</title>
+    <title>Ejercicio 2 Albert</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
   <header class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid my-4 my-lg-5">
@@ -42,10 +43,11 @@
       </div>
     </nav>
   </header>
+
   <main>
     <div class="container-fluid">
       <div class="row flex-lg-row-reverse align-items-center justify-content-center position-relative text text-center text-lg-start py-5 my-3">
-          <div class="logo-hero col-12 col-lg-6 position-relative mb-5">
+          <div class="logo-principal col-12 col-lg-6 position-relative mb-5">
               <div class="flotante">
                 <img  src="./Imagenes/illustration-hero.svg" class="d-block img-fluid mx-xxl-5" alt="Bootstrap Themes">
                 <div class="sombra m-auto bg-primary rounded-end rounded-pill position-absolute"></div>
@@ -63,7 +65,92 @@
           </div>
         </div>
     </div>
+    
+    <div class="container-fluid tabs mt-5">
+      <div class="row text-center">
+        <div class="col-12">
+          <div class="col-lg-6 col-xl-5 col-xxl-4 ms-lg-auto me-lg-auto mx-4">
+            <h3 class="fw-bold mb-3">Features</h3>
+            <p class="lead fw-semibold text-black-50">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+          </div>
+          <ul class="nav nav-tabs flex-column flex-lg-row justify-content-center align-items-center align-items-lg-stretch fw-semibold my-5" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active text-black-50 m-auto p-3" id="Simple-tab" data-bs-toggle="tab" data-bs-target="#Simple-tab-pane" type="button" role="tab" aria-controls="Simple-tab-pane" aria-selected="false">Simple Bookmarking</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link text-black-50 m-auto p-3" id="Speedy-tab" data-bs-toggle="tab" data-bs-target="#Speedy-tab-pane" type="button" role="tab" aria-controls="Speedy-tab-pane" aria-selected="false">Speedy Searching</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link text-black-50 m-auto p-3" id="Easy-tab" data-bs-toggle="tab" data-bs-target="#Easy-tab-pane" type="button" role="tab" aria-controls="Easy-tab-pane" aria-selected="false">Easy Sharing</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="Simple-tab-pane" role="tabpanel" aria-labelledby="Simple-tab" tabindex="0">
+              <div class="row align-items-center py-5 my-3">
+                <div class="logo-tab col-12 col-lg-6 position-relative mb-5">
+                  <div class="flotante float-lg-end px-4 px-lg-0">
+                    <img  src="./Imagenes/illustration-features-tab-1.svg" class="img-fluid" alt="ilustration 1">
+                    <div class="sombra-2 m-auto bg-primary rounded-start rounded-pill position-absolute"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 my-5">
+                  <div class="texto-secundario text-center text-lg-start my-3 mx-lg-5 px-4 pe-lg-0 ps-lg-5 px-xl-5">
+                    <h3 class="fw-bold mb-3">Bookmark in one click</h3>
+                    <p class="fw-semibold text-black-50">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                    <div class="buttons-principal d-grid gap-3 d-lg-flex justify-content-lg-start my-4">
+                      <button type="button" class="btn d-none d-lg-block btn-primary fw-bold shadow py-3 px-0 px-lg-4 me-lg-2">More info</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="Speedy-tab-pane" role="tabpanel" aria-labelledby="Speedy-tab" tabindex="0">
+              <div class="row align-items-center py-5 my-3">
+                <div class="logo-tab col-12 col-lg-6 position-relative mb-5">
+                  <div class="flotante float-lg-end px-4 px-lg-0">
+                    <img  src="./Imagenes/illustration-features-tab-2.svg" class="img-fluid" alt="ilustration 1">
+                    <div class="sombra-2 m-auto bg-primary rounded-start rounded-pill position-absolute"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 my-5">
+                  <div class="texto-secundario text-center text-lg-start my-3 mx-lg-5 px-4 pe-lg-0 ps-lg-5 px-xl-5">
+                    <h3 class="fw-bold mb-3">Inteligent search</h3>
+                    <p class="fw-semibold text-black-50">Our powerful search featrue will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                    <div class="buttons-principal d-grid gap-3 d-lg-flex justify-content-lg-start my-4">
+                      <button type="button" class="btn d-none d-lg-block btn-primary fw-bold shadow py-3 px-0 px-lg-4 me-lg-2">More info</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="Easy-tab-pane" role="tabpanel" aria-labelledby="Easy-tab" tabindex="0">
+              <div class="row align-items-center py-5 my-3">
+                <div class="logo-tab col-12 col-lg-6 position-relative mb-5">
+                  <div class="flotante float-lg-end px-4 px-lg-0">
+                    <img  src="./Imagenes/illustration-features-tab-3.svg" class="img-fluid" alt="ilustration 1">
+                    <div class="sombra-2 m-auto bg-primary rounded-start rounded-pill position-absolute"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 my-5">
+                  <div class="texto-secundario text-center text-lg-start my-3 mx-lg-5 px-4 pe-lg-0 ps-lg-5 px-xl-5">
+                    <h3 class="fw-bold mb-3">Share your bookmarks</h3>
+                    <p class="fw-semibold text-black-50">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of button.</p>
+                    <div class="buttons-principal d-grid gap-3 d-lg-flex justify-content-lg-start my-4">
+                      <button type="button" class="btn d-none d-lg-block btn-primary fw-bold shadow py-3 px-0 px-lg-4 me-lg-2">More info</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
+
+  
+
+
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
