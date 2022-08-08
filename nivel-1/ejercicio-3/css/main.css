@@ -10959,6 +10959,16 @@ textarea.form-control-lg {
   height: 99%;
 }
 
+.cards .text-card {
+  padding: 0 20.5em;
+}
+
+.btn {
+  padding-top: 0.8em !important;
+  padding-bottom: 0.8em !important;
+  font-size: 0.9em;
+}
+
 @media (min-width: 1400px) {
   .texto-principal {
     width: 38.8em;
@@ -10981,6 +10991,9 @@ textarea.form-control-lg {
   .logo-tab img {
     margin-right: 0;
   }
+  .cards .text-card {
+    padding: 0 15.5em;
+  }
 }
 @media (max-width: 1200px) {
   .texto-principal {
@@ -10988,6 +11001,9 @@ textarea.form-control-lg {
   }
   .texto-principal h1, .texto-principal .h1 {
     width: 100%;
+  }
+  .cards .text-card {
+    padding: 0 9.5em;
   }
 }
 @media (min-width: 993px) {
@@ -11007,6 +11023,9 @@ textarea.form-control-lg {
   .navbar-nav li .btn {
     font-size: 1em;
     letter-spacing: 0.1em;
+  }
+  .cards .cascada {
+    height: 27em;
   }
 }
 @media (max-width: 1199px) and (min-width: 993px) {
@@ -11106,6 +11125,15 @@ textarea.form-control-lg {
     width: 66%;
     top: 4em;
     height: 100%;
+  }
+  .cards .text-card {
+    padding: 0 1em;
+  }
+  .cards .card {
+    margin: auto;
+  }
+  .cards p {
+    font-size: 1em;
   }
 }
 @media (min-width: 723px) and (max-width: 992px) {

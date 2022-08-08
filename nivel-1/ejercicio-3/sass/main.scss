@@ -14,7 +14,7 @@ $secondary: #FA5959;
 
 .texto-principal {
     float: right;
-
+    
     p {
         letter-spacing: -0.031em;
     }
@@ -25,19 +25,20 @@ $secondary: #FA5959;
         border: none;
         --bs-nav-tabs-border-width: none;
     }
-
+    
     .nav-item .active {
         border-bottom: 4px solid $secondary;
         color: #000 !important;
     }
-
+    
     li {
         border-bottom: 1px solid #aaa;
+        
         button {
             width: 14em;
         }
     }
-
+    
     .sombra-2 {
         width: 84%;
         top: 5em;
@@ -47,6 +48,17 @@ $secondary: #FA5959;
     }
 }
 
+.cards {
+    .text-card {
+        padding: 0 20.5em;
+    }
+}
+
+.btn {
+    padding-top: 0.8em !important;
+    padding-bottom: 0.8em !important;
+    font-size: 0.9em;
+}
 
 @media (min-width: 1400px) {
     .texto-principal {
@@ -79,6 +91,12 @@ $secondary: #FA5959;
             margin-right: 0;
         }
     }
+
+    .cards {
+        .text-card {
+            padding: 0 15.5em;
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -89,10 +107,16 @@ $secondary: #FA5959;
             width: 100%;
         }
     }
+
+    .cards {
+        .text-card {
+            padding: 0 9.5em;
+        }
+    }
 }
 
 @media (min-width: 993px) {
-    
+
     h1 {
         font-size: 2.8em;
     }
@@ -109,11 +133,17 @@ $secondary: #FA5959;
         li {
             font-size: 0.8em;
             letter-spacing: 0.1em;
-            
+
             .btn {
                 font-size: 1em;
                 letter-spacing: 0.1em;
             }
+        }
+    }
+
+    .cards {
+        .cascada {
+            height: 27em;
         }
     }
 }
@@ -192,7 +222,7 @@ $secondary: #FA5959;
                 border: 2px solid #fff;
             }
         }
-                
+         
         .social {
             padding-top: 9em;
         }
@@ -232,7 +262,7 @@ $secondary: #FA5959;
                 border-top: 1px solid #aaa;
             }
         }
-        
+
         p {
             font-size: 1em;
         }
@@ -241,6 +271,20 @@ $secondary: #FA5959;
             width: 66%;
             top: 4em;
             height: 100%;
+        }
+    }
+
+    .cards {
+        .text-card {
+            padding: 0 1em;
+        }
+
+        .card {
+            margin: auto;
+        }
+
+        p {
+            font-size: 1em;
         }
     }
 }
