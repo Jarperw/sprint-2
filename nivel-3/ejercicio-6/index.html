@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  
+
   <header class="container">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid my-4 my-lg-5">
@@ -163,9 +163,12 @@
                 <div class="col-12 col-lg-6 my-5">
                   <div class="texto-secundario text-center text-lg-start my-3 mx-lg-5 px-4 pe-lg-0 ps-lg-5 px-xl-5">
                     <h3 class="fw-bold mb-3">Share your bookmarks</h3>
-                    <p class="fw-semibold text-black-50">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of button.</p>
+                    <p class="fw-semibold text-black-50">Easily share your bookmarks and collections with others. Create
+                      a shareable link that you can send at the click of button.</p>
                     <div class="buttons-principal d-grid gap-3 d-lg-flex justify-content-lg-start my-4">
-                      <button type="button" class="btn d-none d-lg-block btn-primary fw-bold shadow py-3 px-0 px-lg-4 me-lg-2">More info</button>
+                      <button type="button"
+                        class="btn d-none d-lg-block btn-primary fw-bold shadow py-3 px-0 px-lg-4 me-lg-2">More
+                        info</button>
                     </div>
                   </div>
                 </div>
@@ -317,7 +320,7 @@
         <div class="col-12 text-center text-white px-4 ms-lg-auto me-lg-auto my-5">
           <p class="text-uppercase fw-semibold mt-3">35,000 + Already Joined</p>
           <h3 class="mt-1 mb-4 my-lg-5">Stay up-to-date with what<br>we're doing</h3>
-          <form class="was-validated">
+          <form class="needs-validation">
             <div class="row g-3 mb-3 justify-content-center">
               <div class="col-12 col-lg-auto">
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -348,7 +351,8 @@
           <a class="nav-link mt-4 mt-lg-0 pt-lg-1 pe-lg-5" href="#">Pricing</a>
           <a class="nav-link my-4 mt-lg-0 pt-lg-1 pe-lg-5" href="#">Contact</a>
         </div>
-        <div class="col-12 col-lg-6 mt-4 mb-5 mb-lg-0 mt-lg-3 social d-flex justify-content-center justify-content-lg-end">
+        <div
+          class="col-12 col-lg-6 mt-4 mb-5 mb-lg-0 mt-lg-3 social d-flex justify-content-center justify-content-lg-end">
           <a class="navbar-nav mx-3 mt-1" href="#"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
           <a class="navbar-nav mx-3 mt-1" href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
         </div>
@@ -357,6 +361,26 @@
   </footer>
 
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function () {
+      'use strict'
+
+      var forms = document.querySelectorAll('.needs-validation')
+
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
+
 </body>
 
 </html>
