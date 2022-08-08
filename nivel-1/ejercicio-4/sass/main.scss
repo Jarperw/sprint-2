@@ -60,6 +60,21 @@ $secondary: #FA5959;
     font-size: 0.9em;
 }
 
+.acordeon {
+    .accordion-item {
+        --bs-accordion-btn-focus-box-shadow: none;
+    }
+
+    .accordion-button::after {
+        background-image: url(../Imagenes/icon-arrow.svg);
+    }
+    
+    .btn {
+        padding-right: 1.2em !important;
+        padding-left: 1.2em !important;
+    }
+}
+
 @media (min-width: 1400px) {
     .texto-principal {
         width: 38.8em;
@@ -143,7 +158,7 @@ $secondary: #FA5959;
 
     .cards {
         .cascada {
-            height: 27em;
+            height: 28em;
         }
     }
 }
@@ -222,7 +237,7 @@ $secondary: #FA5959;
                 border: 2px solid #fff;
             }
         }
-         
+        
         .social {
             padding-top: 9em;
         }
@@ -285,6 +300,15 @@ $secondary: #FA5959;
 
         p {
             font-size: 1em;
+        }
+    }
+
+    .acordeon{
+        p {
+            font-size: 1em;
+        }
+        .accordion-button {
+            border-top: none !important;
         }
     }
 }

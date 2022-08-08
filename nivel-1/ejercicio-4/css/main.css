@@ -10969,6 +10969,17 @@ textarea.form-control-lg {
   font-size: 0.9em;
 }
 
+.acordeon .accordion-item {
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+.acordeon .accordion-button::after {
+  background-image: url(../Imagenes/icon-arrow.svg);
+}
+.acordeon .btn {
+  padding-right: 1.2em !important;
+  padding-left: 1.2em !important;
+}
+
 @media (min-width: 1400px) {
   .texto-principal {
     width: 38.8em;
@@ -11025,7 +11036,7 @@ textarea.form-control-lg {
     letter-spacing: 0.1em;
   }
   .cards .cascada {
-    height: 27em;
+    height: 28em;
   }
 }
 @media (max-width: 1199px) and (min-width: 993px) {
@@ -11134,6 +11145,12 @@ textarea.form-control-lg {
   }
   .cards p {
     font-size: 1em;
+  }
+  .acordeon p {
+    font-size: 1em;
+  }
+  .acordeon .accordion-button {
+    border-top: none !important;
   }
 }
 @media (min-width: 723px) and (max-width: 992px) {
