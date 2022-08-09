@@ -1,0 +1,169 @@
+$primary: #5265E1;
+$secondary: #FA5959;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.sombra {
+    width: 75%;
+    bottom: -2em;
+    right: 0;
+    z-index: -1;
+    height: 77%;
+}
+
+.texto-principal {
+    float: right;
+
+    p {
+        letter-spacing: -0.031em;
+    }
+}
+
+.btn {
+    padding-top: 0.8em !important;
+    padding-bottom: 0.8em !important;
+    font-size: 0.9em;
+}
+
+@media (min-width: 1400px) {
+    .texto-principal {
+        width: 38.8em;
+    }
+}
+
+@media (max-width: 1400px) {
+    .texto-principal {
+        width: 33.4em;
+    }
+
+    .sombra {
+        width: 72%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .texto-principal {
+        width: 27.5em;
+
+        & h1 {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 993px) {
+    .navbar-nav {
+        li {
+            font-size: 0.8em;
+            letter-spacing: 0.1em;
+
+            .btn {
+                font-size: 1em;
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+
+    .texto-principal {
+        h1 {
+            font-size: 2.8em;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-toggler {
+        width: 1em;
+        height: 2em;
+        padding: 0;
+        background-image: url(../Imagenes/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    .modal-content {
+        background: #235e;
+        // opacity: 0.94;
+
+        .modal-header {
+            margin: 1em 0.6em 0 0.5em;
+        }
+
+        .modal-body {
+            overflow-y: hidden;
+
+            & ul {
+                align-self: center;
+                margin: 1em 0.5em 0;
+            }
+
+            & li {
+                font-size: large;
+                font-weight: normal;
+                letter-spacing: 0.15em;
+                border-top: 1px solid #fff4;
+                display: grid;
+
+                a {
+                    color: #fff;
+                    margin: 0.6em;
+                }
+
+                button {
+                    font-size: 1.05em;
+                    letter-spacing: 0.15em;
+                    margin: 1.3em -1.5em;
+                    margin-bottom: 11em;
+                    padding: 0.5em 0 !important;
+                    background-color: #1131;
+                    border: 2px solid #fff;
+                }
+            }
+        }
+    }
+
+    .logo-hero {
+        width: 100%;
+
+        .flotante img {
+            margin: auto;
+
+        }
+    }
+
+    .texto-principal {
+        margin: auto;
+        float: none;
+        width: 90%;
+
+        .buttons-principal {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+    }
+
+}
+
+@media (min-width: 723px) and (max-width: 992px) {
+    .sombra {
+        width: 73%;
+        bottom: 0;
+    }
+}
+
+@media (max-width:723px) {
+    .sombra {
+        width: 82%;
+        bottom: 0;
+    }
+}
